@@ -1,0 +1,49 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-image:linear-gradient(red,rgb(207, 82, 103),orange);
+}
+.piano{
+    display: flex;
+    position: relative;
+    margin-left: 4px;
+}
+
+.white_key{
+    width: 80px;
+    height: 220px;
+    border: 1px solid black;
+    margin-left: 6px;
+    background: linear-gradient(rgb(141, 131, 131), rgb(146, 137, 137), white);
+}
+.white_key.active{
+    background: linear-gradient(rgb(207, 111, 111), rgb(138, 68, 68), rgb(173, 14, 14));
+    color: red;
+}
+.black_key{
+    width: 80px;
+    height: 220px;
+    border: 1px solid black;
+    background: linear-gradient(black, midnightblue, grey);
+    margin-left: 6px;
+}
+.black_key.active{
+    background: linear-gradient(rgb(165, 162, 162), rgb(36, 36, 151), rgb(40, 10, 150));
+    color: red;
+}
+#name{
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(75, 33, 61);
+}
